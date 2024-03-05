@@ -1,4 +1,5 @@
 ABSTRACT
+
 SmartInvest is a online web application that will change the way of individual investors approach to their financial planning. Its objective is to deliver personalized, intelligent investment advice, aligning with users' specific financial goals, risk tolerance, and preferences. It will offer its services at a lower cost than traditional human financial advisors. This cost-effectiveness is due to automated algorithms managing investments, which reduces the need for human labour and resources. By leveraging technology, SmartInvest make investment management more accessible to a broader range of investors, including those with smaller amounts of capital and as it a online platform it is more convenient to access and use its services. 
 The main advantages of SmartInvest are: -
 1.	Personalized Portfolio Management: SmartInvest starts by gathering information from the client about their financial situation and future goals and then uses this data to offer personalized investment advice and portfolio management.
@@ -13,6 +14,7 @@ In recent years, technological advancements have transformed the financial servi
 Addressing critical challenges in financial technology, "SmartInvest" prioritizes data security, regulatory compliance, and unbiased decision-making. Through encryption techniques and adherence to regulations, the platform fosters trust among users.
 With its ability to democratize access to high-quality investment guidance, "SmartInvest" empowers users to make informed financial decisions. This research paper aims to delve into its architecture, functionalities, challenges, and potential, highlighting its pivotal role in shaping personalized financial planning.
 Methodology
+
 Methodology:
 
 1. Data Collection and Preprocessing:
