@@ -1,0 +1,36 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>log in </title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href="{% static 'css/login.css'%}">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'> 
+</head>
+</head>
+<body>
+    <form action="" method="post">
+        {% csrf_token %}
+        <div class="LOGO">
+        <p>Smart Investment Advisor</p>
+    
+        </div>
+
+        <div class="container">
+            <div class="imgcontainer">
+                <img src="{% static 'icons8-user-64.png'%}">
+
+            <div>
+                <label for='username'><b>username: </b></label>
+                <input type='text' class="input-box" placeholder=" Enter username" name='username' required><br>
+                <label for='password'><b>Password : </b></label>
+            <input type="password"class="input-box" placeholder="Enter Password" name="password" required><br>
+            <button type="submit" class="login-btn"><b>Log in</b></button><br>
+            <p> or</p>
+            <a href="{% url 'signup' %}" class="btn btn-primary">Go to Signup</a><br>
+            </div>
+
+            </div>
+        </div>

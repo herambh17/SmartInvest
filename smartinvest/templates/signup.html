@@ -1,0 +1,46 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SMART INVEST</title>
+
+    <link rel="shortcut icon" type="x-icon" href="{% static 'th - Copy.jpg'%}">
+       
+    <link rel="stylesheet" href="{% static 'css/signup.css' %}">
+       
+</head>
+
+<body>
+    <form name="register" action="" method="post">
+       {% csrf_token %}
+        <div class="logo">
+            <p>SMART INVEST</p>
+        </div>
+         
+        
+       
+      
+        <div class="container">
+            <div class="imgcontainer">
+                <img src="{% static 'icons8-user-64.png'%}">
+                
+            </div>
+            <label for='firstname'><b>First Name : </b></label>
+            <input type='text' class="input-box" placeholder="Enter your first name" name='firstname' required><br>
+            <label for='lastname'><b>Last Name :</b></label>
+            <input type='text'class="input-box" placeholder='Enter your last name' name='lastname' required><br>
+            <label for='username'><b>Username :</b></label>
+            <input type='text'class="input-box" placeholder='Enter your username' name='username' required><br>
+            <label for ='email' ><b>Email Id :  </b></label>
+            <input type="email" class="input-box" placeholder="Enter your email" name='email'>
+            <label for='password'><b>Password : </b></label>
+            <input type="password"class="input-box" placeholder="Enter Password" name="password" required><br>  
+            <button type="submit" class="signup-btn"><b>Signup</b></button><br>    
+            <hr>
+        </div> 
+        
+    <form>
+</body>
+</html>
