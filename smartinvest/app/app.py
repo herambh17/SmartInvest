@@ -9,6 +9,7 @@ import yfinance as yf
 import streamlit as st
 import os
 
+from tensorflow import keras
 from sklearn.preprocessing import MinMaxScaler
 from keras.models import Sequential
 from keras.layers import Dense
