@@ -8,6 +8,7 @@ import math
 import yfinance as yf
 import streamlit as st
 import os
+import pickle
 
 from tensorflow import keras
 from sklearn.preprocessing import MinMaxScaler
@@ -122,7 +123,8 @@ data_training_scaled = scalar.fit_transform(data_training)
 
 model_path = os.path.join('models', 'my_model.h5')
 
-model = keras.models.load_model('models/my_model.h5')
+model=pickle.load(open('model.sav','rb'))
+
 
 
 past_60 = data_training.tail(60)
