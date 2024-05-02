@@ -121,7 +121,7 @@ data_training_scaled = scalar.fit_transform(data_training)
 
 model_path = os.path.join('models', 'my_model.h5')
 
-model=load_model(model_path)
+model = keras.models.load_model('models/my_model.h5')
 
 
 past_60 = data_training.tail(60)
