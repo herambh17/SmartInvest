@@ -120,7 +120,7 @@ data_training_scaled = scalar.fit_transform(data_training)
 
 
 
-model=load_model('models/model.h5')
+model=load_model('smartinvest/app/models/model.h5')
 
 
 past_60 = data_training.tail(60)
