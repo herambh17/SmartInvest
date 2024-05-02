@@ -7,6 +7,7 @@ from datetime import date
 import math
 import yfinance as yf
 import streamlit as st
+import os
 
 from sklearn.preprocessing import MinMaxScaler
 from keras.models import Sequential
@@ -118,9 +119,9 @@ data_testing = df.iloc[split_index:].copy()
 scalar = MinMaxScaler()
 data_training_scaled = scalar.fit_transform(data_training)
 
+model_path = os.path.join('models', 'my_model.h5')
 
-
-model=load_model('my_model.h5')
+model=load_model(model_path)
 
 
 past_60 = data_training.tail(60)
