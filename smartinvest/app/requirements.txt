@@ -1,6 +1,6 @@
 yfinance
 urllib3
-os
+
 tensorflow
 
 
